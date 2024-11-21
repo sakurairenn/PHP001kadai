@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <link rel="stylesheet" href="kadai.css">
+    <meta charset="UTF-8">
+    <title>2022サッカーワールドカップ試合結果確認フォーム</title>
+</head>
+<body>
+    <h1>
+        2022サッカーワールドカップ試合結果確認フォーム
+    </h1>
+    <h2>試合結果を確認</h2>
+    <form action="result.php" method="POST">
+        <label for="team">チーム名:</label>
+        <input type="text" id="team" name="team" required>
+
+        <label for="date">試合日付:</label>
+        <input type="date" id="date" name="date">
+<h3>
+    *日付の入力がない場合過去の試合結果がすべて表示されます
+</h3>
+        <button type="submit">検索</button>
+    </form>
+</body>
+</html>
