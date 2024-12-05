@@ -1,92 +1,117 @@
+/* 全体のスタイル */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa; /* 優しい背景色 */
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #e0e7ff, #f1f5f9); /* グラデーション背景 */
     margin: 0;
     padding: 0;
     color: #333;
 }
-
+/* コンテナ */
 .container {
     max-width: 800px;
-    margin: 20px auto;
-    padding: 20px;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 30px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* 影を強調 */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.container:hover {
+    transform: translateY(-5px); /* ホバーで浮き上がる */
+    box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* ヘッダー */
 header {
     text-align: center;
-    padding: 10px 0;
-    margin-bottom: 20px;
-    background-color: #007bff; /* アクセントカラー */
+    padding: 20px 0;
+    margin-bottom: 25px;
+    background: linear-gradient(90deg, #4f46e5, #3b82f6); /* アクセントグラデーション */
     color: white;
-    border-radius: 8px 8px 0 0;
+    border-radius: 10px 10px 0 0;
 }
 
 header h1 {
     margin: 0;
-    font-size: 24px;
+    font-size: 28px;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
+/* フォーム */
 form {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 form label {
     display: block;
     margin: 10px 0 5px;
     font-weight: bold;
+    color: #555;
 }
 
 form input, form select, form button {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
     font-size: 16px;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    border-color: #3b82f6;
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.5);
 }
 
 form button {
-    background-color: #007bff; /* ボタンの色 */
+    background: linear-gradient(90deg, #3b82f6, #60a5fa); /* ボタンのグラデーション */
     color: white;
+    font-weight: bold;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: background 0.3s ease, transform 0.2s ease;
+    border: none;
 }
 
 form button:hover {
-    background-color: #0056b3;
+    background: #2563eb; /* ホバー時の濃い青 */
+    transform: scale(1.05);
 }
 
+/* 結果表示 */
 .result {
-    padding: 15px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
-    border-radius: 4px;
-    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    background: #f9fafb;
     transition: box-shadow 0.3s ease;
 }
 
 .result:hover {
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .result h2 {
-    margin: 0 0 10px;
-    font-size: 20px;
-    color: #007bff;
+    margin: 0 0 12px;
+    font-size: 22px;
+    color: #4f46e5;
+    font-weight: bold;
 }
 
 .result p {
-    margin: 5px 0;
+    margin: 8px 0;
     font-size: 16px;
+    line-height: 1.6;
 }
 
+/* レスポンシブ対応 */
 @media (max-width: 600px) {
     .container {
-        padding: 10px;
+        padding: 15px;
     }
 
     form input, form select, form button {
@@ -94,7 +119,6 @@ form button:hover {
     }
 
     header h1 {
-        font-size: 20px;
+        font-size: 22px;
     }
 }
-

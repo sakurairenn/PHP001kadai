@@ -46,7 +46,7 @@
     // データベース接続情報
     $servername = "localhost"; // サーバー名
     $username = "root";       // ユーザー名
-    $password = "1234";           // パスワード
+    $password = "";           // パスワード
     $dbname = "board";        // データベース名
 
     // データベース接続
