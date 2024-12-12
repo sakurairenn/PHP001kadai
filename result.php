@@ -5,10 +5,11 @@
     <title>試合結果確認</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f8f9fa;
-            color: #333;
-            padding: 20px;
+            background: url('world.jpg') no-repeat center center fixed;
+                 background-size: cover;
+                      margin: 0;
+                         padding: 0;
+                            color: #333;
         }
         form {
             margin-bottom: 20px;
