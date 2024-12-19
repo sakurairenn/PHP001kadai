@@ -29,6 +29,8 @@
         th {
             background-color: #f2f2f2;
         }
+     
+
     </style>
 </head>
 <body>
@@ -41,6 +43,7 @@
         <input type="date" id="date" name="date">
         <br><br>
         <button type="submit">検索</button>
+        <a href="index.html" class="home-button">ホームに戻る</a>
     </form>
 
     <?php
